@@ -1,0 +1,35 @@
+/* Цветовая палитра: */
+
+/*
+основной - background: #E5E5E5 
+вторичный - background: #2F303A 
+Наша Команда - background: #F5F4FA;
+Хедер - background: #FFFFFF;
+*/
+/* 
+Акцент color: #2196F3; 
+Герой color: #FFFFFF;
+Н - color: #212121
+р - color #757575
+
+*/
+body {
+	color: #757575;
+}
+
+ul {
+list-style: none;
+
+}
+
+a {
+	text-decoration:none
+}
+
+.logo {
+	color: #2196F3;
+}
+
+.lofo-color {
+	color: #000000;
+}
