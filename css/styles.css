@@ -1,35 +1,112 @@
 /* Цветовая палитра: */
-
 /*
-основной - background: #E5E5E5 
-вторичный - background: #2F303A 
-Наша Команда - background: #F5F4FA;
-Хедер - background: #FFFFFF;
+	основной - background: #FFFFFF 
+	вторичный - background: #2F303A 
+	Наша Команда - background: #F5F4FA;
+	Хедер - background: #FFFFFF;
+	
 */
 /* 
-Акцент color: #2196F3; 
-Герой color: #FFFFFF;
-Н - color: #212121
-р - color #757575
-
+	primary color #757575
+	accent color: #2196F3; 
+	Hero color: #FFFFFF;
+	title color: #212121
 */
+:root {
+  --title-collor: #212121;
+  --accent-color: #2196f3;
+  --primary-text-color: #757575;
+  --primary-white: #ffffff;
+  --secondery-bg: #2f303a;
+}
 body {
-	color: #757575;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
-
 ul {
-list-style: none;
-
+  list-style: none;
 }
-
 a {
-	text-decoration:none
+  text-decoration: none;
 }
-
+/* css Header */
 .logo {
-	color: #2196F3;
+  color: var(--accent-color);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
-.lofo-color {
-	color: #000000;
+.lofo-color-header {
+  color: #000000;
+}
+
+.nav-link .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-collor);
+}
+
+.header-contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+/* css Main */
+
+.hero {
+  background-color: var(--secondery-bg);
+}
+.hero-title {
+  color: var(--primary-white);
+}
+.section-tim {
+  background-color: #f5f4fa;
+}
+.section-title {
+  color: var(--title-collor);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondery-bg);
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-white);
+}
+
+.lofo-color-footer {
+  color: var(--primary-white);
+}
+
+.footer-contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
