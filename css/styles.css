@@ -20,11 +20,8 @@
   --tim-btn-bg: #f5f4fa;
 }
 body {
-  font-family: Roboto, Tahoma, Verdana, sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
-  background-color: var(--primary-white);
-  font-weight: 400;
-  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 /* BASE */
@@ -92,7 +89,7 @@ body {
   color: var(--primary-white);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -121,25 +118,31 @@ body {
 /* Особенности */
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .features-title {
-  font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--title-collor);
 }
 
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
 }
 
 /* Чем мы занимаемся */
 
 .work-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -153,7 +156,6 @@ body {
 }
 
 .tim-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.31;
   text-align: center;
@@ -168,14 +170,12 @@ body {
 
 .tim-name {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--title-collor);
 }
 
 .tim-specialty {
-  font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
@@ -203,7 +203,6 @@ body {
 }
 
 .project-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -211,7 +210,6 @@ body {
 }
 
 .project-text {
-  font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
 }
